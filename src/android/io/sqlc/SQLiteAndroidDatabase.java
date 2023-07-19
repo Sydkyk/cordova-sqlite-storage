@@ -78,7 +78,7 @@ class SQLiteAndroidDatabase
                 android.os.Build.VERSION.SDK_INT);
         }
         dbFile = dbfile; // for possible bug workaround
-        int windowSize = 200 * 1024 * 1024; // 100 MB window size
+        int windowSize = 200 * 1024 * 1024; // 200 MB window size
         CustomCursorFactory cursorFactory = new CustomCursorFactory(windowSize);
         mydb = SQLiteDatabase.openOrCreateDatabase(dbfile, cursorFactory);
     }
